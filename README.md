@@ -92,12 +92,13 @@ Het is aanbevolen per Python-project een _virtual environment_ te gebruiken. Vol
 
     Na uitvoeren krijgen geslaagde tests een groen vinkje, en niet-geslaagde tests een rood kruisje (bij een fail) of een rode stip (bij een error of timeout). Het doel is uiteraard een oplossing te vinden waarvoor alle tests slagen.
 
-> ℹ️ Bij de _test collection_ zullen in het begin veel ImportErrors optreden, en zullen nog niet alle tests verschijnen onder TESTING, je krijgt hiervan onderaan in de lijst een melding:
+> ℹ️ Bij de _test collection_ (het automatisch herkennen en oplijsten van de tests in de stap hierboven) zullen in het begin veel ImportErrors optreden. Hierdoor zullen nog niet alle tests verschijnen onder TESTING. Je krijgt hiervan onderaan in de lijst een melding:
 >
 > ![alt text](img/pytest-not-installed.png)
 >
 > Dit is normaal, omdat de tests functies proberen te importeren die nog niet gedefinieerd zijn.
 > Naarmate je oplossingen schrijft, zullen de tests verschijnen onder TESTING.
+> Wil je zeker zijn dat je oplossing van een oefening voor _alle_ tests slaagt, en dat er geen zijn overgeslaan door mislukte imports? Gebruik dan het evaluatiescript, dat steeds alle tests in rekening neemt.
 
 >ℹ️ Als je een foutje gemaakt hebt bij de configuratie van de tests kun je dit altijd nog terug rechtzetten:
 >    - typ `CTRL+Shift+P`

@@ -7,13 +7,13 @@ import subprocess
 import json
 import csv
 from pathlib import Path
-from concurrent.futures import ProcessPoolExecutor, as_completed
-from filelock import FileLock
 from datetime import datetime
+from concurrent.futures import ProcessPoolExecutor
+from filelock import FileLock
 
 # -------------------- SETTINGS ----------------------
 # Zelfevaluatie van de student?
-ZELFEVALUATIE = True  # Zet op True om als student zelf je score te berekenen en in de CSV te zetten.
+ZELFEVALUATIE = True  # Zet op True om als student zelf je score te berekenen
 # Debugging output nodig?
 VERBOSE = True       # Zet op True voor meer gedetailleerde uitvoer (nuttig bij zelfevaluatie).
 # Geef het pad naar de map waaronder zich de student repositories bevinden (wordt enkel gebruikt indien geen zelfevaluatie).
@@ -233,7 +233,6 @@ def main():
                 out_csv, lock_file, fieldnames
             )
             futures.append((f, student_dir.name, i))
-        finished = 0
         for fut, name, i in futures:
             result = fut.result()
             print(f"Finished grading student {i}/{len(student_dirs)}: {name} (overall score: {result['totaalscore']}/{result['max. totaalscore']})")

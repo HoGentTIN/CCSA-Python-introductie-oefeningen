@@ -134,17 +134,17 @@ Je kunt het evaluatiescript in `hulpbestanden/evaluatiescript.py` gebruiken om j
 3. Let wel: dit script gebruikt jouw lokale tests en instellingen, als je hierin wijzigingen hebt aangebracht, zal je uiteindelijke score mogelijk afwijken.
 
 ## 📣 Problemen? Laat het ons weten!
-Het is de eerste keer dat we deze oefeningen via GitHub Classroom aanbieden. Tot vorig jaar werden deze oefeningen via het oefeningenplatform Dodona aangeboden. Omdat Dodona dit jaar betalend wordt, hebben we voor dit gratis alternatief gekozen. Er kunnen nog enkele kinderziekten in het project zitten. Als jullie fouten zien (zelfs typfouten), of als bepaalde zaken niet werken zoals verwacht, laat het graag weten via mail: [sofie.lambert@hogent.be](mailto:sofie.lambert@hogent.be?subject=CCSA%20-%20Opmerking%20bij%20de%20Python-oefeningen).
+Het is de eerste keer dat we deze oefeningen via GitHub Classroom aanbieden. Tot vorig jaar werden deze oefeningen via het oefeningenplatform Dodona aangeboden. Omdat Dodona dit jaar betalend wordt, hebben we voor dit gratis alternatief gekozen. Er kunnen nog enkele kinderziekten in het project zitten. Als jullie fouten zien (typfouten, inhoudelijke fouten of fouten in de testen) of als bepaalde zaken niet werken zoals verwacht, laat het zeker weten via het forum op Chamilo.
 
 ## 🧠 Aan de slag!
-Deze oefeningen helpen je om Python te leren en om complexe problemen stap voor stap op te lossen. De geoefende vaardigheden zijn nuttig voor dit vak (ook voor het examen) én in je latere carrière. Het is absoluut niet aangewezen AI-hulp te gebruiken bij het oplossen van de oefeningen.
+Deze oefeningen helpen je om Python te leren en om complexe problemen stap voor stap op te lossen. De geoefende vaardigheden zijn nuttig voor dit vak (ook voor het examen) én in je latere carrière. Het is absoluut niet aangewezen deze oefeningen te laten oplossen door AI. Gebruik AI eventueel wel om uitleg of tips bij concrete stappen te vragen of om uit te leggen hoe iets in zijn werk gaat binnen Python.
 
 Veel succes alvast!
 
 ## 📚 Bronnen
 
 - Een groot deel van de oefeningen werd overgenomen uit bestaande oefeningenreeksen op Dodona, soms met enkele kleine aanpassingen. We gebruikten materiaal uit onderstaande reeksen:
-    - _the coders apprentice_
+    - [_The Coder's Apprentice_](https://www.spronck.net/pythonbook/)
     - _we-programmeren_
     - _Python oefeningen (115) basisconcepten programmeren_
     - _LerenProgrammerenHHC5_

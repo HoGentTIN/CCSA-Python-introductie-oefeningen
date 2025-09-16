@@ -1,0 +1,9 @@
+*.pyc
+*.json
+*.csv
+*.lock
+.DS_Store
+venv/
+.venv/
+.vscode/
+.pytest_cache/

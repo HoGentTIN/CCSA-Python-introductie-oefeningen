@@ -1,0 +1,2 @@
+# Boeken bestellen
+Een boek kost in de winkel €24,95, maar boekenwinkels krijgen 40 procent korting bij inkoop. Het versturen van boeken kost €3 voor het eerste boek, en 75 cent voor ieder volgend boek. Bereken hoeveel de winkel betaalt voor 60 boeken. Print het resultaat.

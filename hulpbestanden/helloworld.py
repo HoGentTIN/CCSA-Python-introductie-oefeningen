@@ -1,0 +1,1 @@
+print("Welkom bij de Python-oefeningen!")

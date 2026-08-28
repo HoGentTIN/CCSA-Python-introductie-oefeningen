@@ -5,13 +5,13 @@ Maak kennis met Python aan de hand van deze oefeningen.
 
 >ℹ️ Dit stappenplan is uitgewerkt voor VS Code, maar je mag ook een andere IDE gebruiken. Zorg dan zelf dat je configuratie klopt.
 
->⚠️ Installeer eerst Python én VS Code volgens de instructies in de slides: Chamilo > Documenten > Slides > H0 - Inleiding (laatste slide).
+>⚠️ Installeer eerst Python én VS Code volgens de instructies in de slides: Orion > Slides > H0 - Inleiding (laatste slides).
 
-### Github Classroom-repo aanmaken
+### Je eigen Github repo aanmaken
 
-1. Maak een GitHub-repository aan door de Classroom-link op Chamilo te volgen. ⚠️ Let op: dit is niet hetzelfde als zelf een repo opzetten. Je moet de link gebruiken!
+1. Maak een eigen GitHub-repository aan door een _Fork_ te maken van deze repo. Klik bovenaan deze pagina op **Fork** en bevestig met **Create fork**.
 
-2. Clone je persoonlijke classroom-repository naar je PC. Indien dit gevraagd wordt, selecteer de optie om de fork "for my own purposes" te gebruiken. 
+2. _Clone_ je persoonlijke fork naar je PC. 
 
 >ℹ️ Weet je niet hoe je een repository kan clonen? 
 >
@@ -20,8 +20,7 @@ Maak kennis met Python aan de hand van deze oefeningen.
 > Clonen, pushen, committen, ... van/naar Git kan op veel manieren. Hieronder enkele mogelijke opties:
 > 1. Werken via de command line, zoals beschreven in de stappen na installatie in de Git@HOGENT gebruikersgids.
 > 2. De eenvoudige, visuele app [Github Desktop](https://desktop.github.com/download/) gebruiken om Github-repositories te beheren (enkel beschikbaar voor Windows en macOS).
-> 3. Als je in VS Code werkt, met de [ingebouwde Git-functionaliteit](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_open-a-git-repository).
-
+> 3. Als je in VS Code werkt, met de [ingebouwde Git-functionaliteit](https://code.visualstudio.com/docs/sourcecontrol/intro-to-git#_open-a-git-repository). 
 ### Configuratie VS Code 
 
 #### Je workspace instellen
@@ -34,6 +33,7 @@ Maak kennis met Python aan de hand van deze oefeningen.
 
     Je kunt de mappen openklikken en bestanden weergeven door erop te klikken.
 
+2. Als bovenaan een melding _Restricted Mode is intended for safe code browsing..._ verschijnt, klik op **Manage** en bevestig met **Trust** dat je deze map vertrouwt.
 
 >💡 Markdown-bestanden zoals deze README kun je in VS Code visualiseren met `Ctrl+Shift+V`.
 
@@ -41,7 +41,7 @@ Maak kennis met Python aan de hand van deze oefeningen.
 Het is aanbevolen per Python-project een _virtual environment_ te gebruiken. Volg onderstaande stappen om deze op te zetten.
 
 1. Open het Command Palette (`Ctrl+Shift+P`), zoek naar `Python: Create Environment...`, en selecteer dit commando.
-2. Kies `Venv`:
+2. Kies `venv`:
 
     <img src="img/create_environment_dropdown.png" alt="environment keuze" width="600">
 
@@ -49,19 +49,23 @@ Het is aanbevolen per Python-project een _virtual environment_ te gebruiken. Vol
 
     <img src="img/interpreters-list.png" alt="interpreter keuze" width="600">
 
-4. Vink aan dat je de dependencies uit `requirements.txt` wil installeren en bevestig met OK:
+4. Bevestig de naam van de venv met `Enter`:
+    
+    <img src="img/create_environment_confirm.png" alt="interpreter keuze" width="600">
+
+5. Selecteer `Install packages found in dependency files`:
+
+    <img src="img/create_environment_keuze.png" alt="interpreter keuze" width="600">
+
+6. Vink aan dat je de dependencies uit `requirements.txt` wil installeren en bevestig met OK:
     
     <img src="img/select-dependencies-venv.png" alt="interpreter keuze" width="600">
 
-5. Een melding toont de vooruitgang van het aanmaken van de environment. Dit kan enkele minuten duren.
+7. Een melding toont de vooruitgang van het aanmaken van de environment. Dit kan enkele minuten duren.
 
     <img src="img/create_environment_prompt_status-2.png" alt="status environment aanmaken" width="400">
 
-    Je krijgt bevestiging in een nieuwe melding:
-
-    <img src="img/environment-selected.png" alt="status environment aanmaken" width="450">
-
-6. Na bovenstaande bevestiging, kun je testen of de environment succesvol wordt geactiveerd. 
+8. Eens de installatie voltooid is, kun je testen of de environment succesvol wordt geactiveerd. 
 
     Open `hulpbestanden/helloworld.py` en voer de module uit door rechtsboven op het driehoekje te klikken. Normaal wordt de virtuele environment automatisch geactiveerd zodra de terminal wordt geopend in VS Code. Je kan dit zien omdat er **(.venv)** voor elke prompt in de terminal verschijnt. De uitvoer zou er ongeveer als volgt moeten uitzien:
     ```powershell
@@ -118,31 +122,21 @@ Wil je je python-code debuggen? In [deze tutorial van VS Code](https://code.visu
 
 >⚠️ Maak zelf geen files aan en wijzig de mappenstructuur niet.
 
-2. Open `hulpbestanden/studentengegevens.txt`. Vul je studentennummer, voornaam en familienaam in (géén extra lijnen toevoegen). 
-
-    Voorbeeld:
-
-    <img src="img/studentengegevens-invullen.png" alt="Voorbeeld studentengegevens" width="270">
-
->⚠️ Zorg dat je studentennummer correct in `studentengegevens.txt` staat, anders krijg je mogelijk geen punten. 
-
-3. Bewaar je wijzigingen. Commit en push regelmatig naar GitHub.
+2. Bewaar je wijzigingen. Commit en push regelmatig naar GitHub, zo heb je een back-up van al je code en aanpassingen.
 
     In VS Code gebruik je het vertakkingen-icoon links om git-acties (commit, push, pull...) uit te voeren.:
 
     <img src="img/git-in-vsc.png" alt="Source control" width="300">
 
-## 📝 Evaluatie
+## 📝 Zelfevaluatie
 
-Het aandeel volledig juist opgeloste oefeningen bepaalt je score voor dit onderdeel (zie de studiefiche om te zien voor welk percentage van de punten dit telt).
-
-Je kunt het evaluatiescript in `hulpbestanden/evaluatiescript.py` gebruiken om je score zelf te berekenen:
+Je kunt het evaluatiescript in `hulpbestanden/evaluatiescript.py` gebruiken om te zien hoe ver je al staat met de oefeningen:
 1. Voer het script uit (met de play-knop rechtsboven of via de terminal).
 2. Je score wordt na afloop in de console weergegeven en weggeschreven naar een .csv-bestand.
-3. Let wel: dit script gebruikt jouw lokale tests en instellingen, als je hierin wijzigingen hebt aangebracht, zal je uiteindelijke score mogelijk afwijken.
+3. Let wel: dit script gebruikt jouw lokale tests en instellingen, als je hierin wijzigingen hebt aangebracht, zal je score niet correct zijn.
 
 ## 📣 Problemen? Laat het ons weten!
-Het is de eerste keer dat we deze oefeningen via GitHub Classroom aanbieden. Tot vorig jaar werden deze oefeningen via het oefeningenplatform Dodona aangeboden. Omdat Dodona dit jaar betalend wordt, hebben we voor dit gratis alternatief gekozen. Er kunnen nog enkele kinderziekten in het project zitten. Als jullie fouten zien (typfouten, inhoudelijke fouten of fouten in de testen) of als bepaalde zaken niet werken zoals verwacht, laat het zeker weten via het forum op Chamilo.
+Als jullie fouten zien (typfouten, inhoudelijke fouten of fouten in de testen) of als bepaalde zaken niet werken zoals verwacht, laat het zeker weten via het forum op Orion of via mail.
 
 ## 🧠 Aan de slag!
 Deze oefeningen helpen je om Python te leren en om complexe problemen stap voor stap op te lossen. De geoefende vaardigheden zijn nuttig voor dit vak (ook voor het examen) én in je latere carrière. Het is absoluut niet aangewezen deze oefeningen te laten oplossen door AI. Gebruik AI eventueel wel om uitleg of tips bij concrete stappen te vragen of om uit te leggen hoe iets in zijn werk gaat binnen Python.
